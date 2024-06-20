@@ -24,6 +24,7 @@
 }
 body {
     background:var(--bg-url) no-repeat top center/cover;
+    height:100vh;
 }
 #container {
     width: 100%;
@@ -33,7 +34,7 @@ body {
 }
 #profile {
     text-align: center;
-    padding:24px
+    padding:24px;
 }
 
 #profile img{
@@ -68,7 +69,7 @@ body * {
     top:50%;
     left:0;
     z-index:1;
-    transform:translateY(-50%)
+    transform:translateY(-50%);
 }
 .light #switch button{
     right:0;
@@ -137,4 +138,13 @@ footer{
 }
 #social-links a:hover  {
     background: var(--highlight-color);
+}
+@media (min-width: 700px){
+    :root{
+        --bg-url:url(./assets/bg-desktop.jpg);
+    }
+    .light{
+        --bg-url:url(./assets/bg-desktop-light.jpg);
+    }
+
 }
